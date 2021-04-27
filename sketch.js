@@ -12,7 +12,7 @@ This example uses p5 preload function to create the classifier
 // Classifier Variable
 let classifier;
 // Model URL
-let imageModelURL = 'https://john2655717.github.io/imageai10832629/';
+let imageModelURL = 'https://wayne-jan-0422.github.io/imageai/';
 
 // Video
 let video;
@@ -22,13 +22,12 @@ let label = "";
 
 // Load the model first
 function preload() {
-  classifier = ml5.imageCla ssifier(imageModelURL + 'model.json');
+  classifier = ml5.imageClassifier(imageModelURL + 'model.json');
 }
 
 function setup() {
   createCanvas(320, 320);
   // Create the video
-  
   var constraints = {
 
     audio: false,
@@ -50,8 +49,7 @@ function setup() {
     //}
 
   };
-  
-  
+
   video = createCapture(constraints);
   video.size(320, 320);
   video.hide();
