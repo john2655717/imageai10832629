@@ -22,14 +22,38 @@ let label = "";
 
 // Load the model first
 function preload() {
-  classifier = ml5.imageClassifier(imageModelURL + 'model.json');
+  classifier = ml5.imageCla ssifier(imageModelURL + 'model.json');
 }
 
 function setup() {
-  createCanvas(320, 260);
+  createCanvas(320, 320);
   // Create the video
-  video = createCapture(VIDEO);
-  video.size(320, 240);
+  
+  var constraints = {
+
+    audio: false,
+
+    video: {
+
+      facingMode: {
+
+        exact: "environment"
+
+      }
+
+    }   
+
+    //video: {
+
+      //facingMode: "user"
+
+    //}
+
+  };
+  
+  
+  video = createCapture(constraints);
+  video.size(320, 320);
   video.hide();
 
   flippedVideo = ml5.flipImage(video)
