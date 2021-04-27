@@ -1,1 +1,1 @@
-{"tfjsVersion":"1.3.1","tmVersion":"2.3.1","packageVersion":"0.8.4","packageName":"@teachablemachine/image","timeStamp":"2021-04-27T05:23:35.855Z","userMetadata":{},"modelName":"APP期中動物辨識","labels":["大象","馬","狗"]}
+{"tfjsVersion":"1.3.1","tmVersion":"2.3.1","packageVersion":"0.8.4","packageName":"@teachablemachine/image","timeStamp":"2021-04-27T06:08:49.604Z","userMetadata":{},"modelName":"APP期中動物辨識","labels":["大象","馬","狗","貓","雞","牛"]}
